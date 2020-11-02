@@ -2,4 +2,9 @@
 
 import PackageDescription
 
-let package = Package(name: "Dollar")
+let package = Package(
+  name: "Dollar",
+  products: [
+    .library(name: "Dollar", targets: ["Dollar"])
+  ]
+)
