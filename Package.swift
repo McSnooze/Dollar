@@ -11,7 +11,7 @@ let package = Package(
     .library(name: "Dollar", targets: ["Dollar"])
   ],
   targets: [
-    .target(name: "Dollar", dependencies: [], path: "Sources")
+    .target(name: "Dollar", dependencies: [], path: "Sources", exclude: ["Info.plist"])
   ],
   swiftLanguageVersions: [.v5]
 )
